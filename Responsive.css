@@ -3,18 +3,91 @@
     padding: 0px;
     box-sizing: border-box;
 }
-
-
-
-
-
-
-/* Responsive */
-@media only screen and (max-width: 688px) {
-    
+.logo{
+    color: white;
+    font-size: 30px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 30px;
+    background-color: dodgerblue;
+    height: 80px;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    margin: 0px 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    font-size: 20px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+nav ul li:hover a{
+    background-color: #ad31d3;
+}
+nav ul li:first-child a{
+    background-color: #ad31d3;
+}
+#inp-btn{
+    color: white;
+    font-size: 22px;
+    display: none;
+}
+#click{
+    display: none;
+}
+/* Hero area start here */
+.hero-area{
+    background-image: url("images/banner.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 93vh;
 }
 
 
-@media only screen and (min-width: 689px) and (max-width: 992px) {
 
+
+
+
+/* Responsive start here */
+@media only screen and (max-width: 900px) {
+    nav ul{
+        position: fixed;
+        top: 80px;
+        background-color: #e77e7e;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        flex-direction: column;
+        text-align: center;
+        padding-top: 20px;
+        transition: all 0.5s ease;
+    }
+    nav ul li{
+        margin: 25px 0px;
+    }
+    nav ul li:hover a, nav ul li:first-child a{
+        background: none;
+        color: red;
+    }
+    #inp-btn{
+        display: block;
+        cursor: pointer;
+    }
+    #click:checked ~ ul{
+        left: 0%;
+    }
+    #click:checked ~ #inp-btn i::before{
+        content: "\f00d";
+    }
 }
