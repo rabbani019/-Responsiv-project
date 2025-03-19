@@ -88,19 +88,20 @@ nav ul li:first-child a{
 
 
 /* Hero area start here */
-.service-heading{
-    text-align: center;
-    color: white;
-    font-size: 40px;
-    padding: 50px 0px;
-    letter-spacing: 1.1rem;
-}
 .hero-area{
     background-image: url(images/banner.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 86vh;
+}
+/* first section start here */
+.service-heading{
+    text-align: center;
+    color: white;
+    font-size: 40px;
+    padding: 50px 0px;
+    letter-spacing: 1.1rem;
 }
 .service-six-cards-container{
     display: grid;
@@ -128,6 +129,47 @@ nav ul li:first-child a{
 .first-section{
     background-color: #3e72e2;
 }
+/* Secound section start here */
+.smart-text-image-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 200px;
+    gap: 50px;
+}
+.secound-section{
+    background-color: #02417c;
+}
+.smart-text{
+    color: white;
+}
+.smart-text h2{
+    margin: 20px 0px;
+    font-size: 30px;
+}
+button{
+    margin: 20px 0px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #cc3ac0;
+}
+button a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.smart-heading h2{
+    color: yellow;
+    text-align: center;
+    font-size: 40px;
+    padding: 30px 0px;
+    letter-spacing: 0.2em;
+}
+
+
+
+
+
 
 
 
@@ -140,6 +182,15 @@ nav ul li:first-child a{
         width: 100%;
         grid-gap: 15px;   
     }
+    /* secound section responsive */
+    .smart-text-image-container{
+        display: block;
+        margin: 0px 50px;  
+    }
+    .smart-img img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 1299px){
@@ -148,5 +199,14 @@ nav ul li:first-child a{
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
         grid-gap: 20px;
+    }
+     /* secound section responsive */
+     .smart-text-image-container{
+        display: block;
+        margin: 0px 100px;  
+    }
+    .smart-img img{
+        width: 100%;
+        margin-bottom: 70px;
     }
 }
