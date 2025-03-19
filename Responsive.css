@@ -196,6 +196,7 @@ button a{
     color: black;
     text-transform: uppercase;
     font-weight: bold;
+    border-radius: 5px;
 }
 .four-card-container{
     display: grid;
@@ -214,7 +215,55 @@ button a{
     font-size:20px;
     padding: 10px 0px 20px 0px;
 }
-
+/* Fourth section start here */
+.fourth-section{
+    background-color: #a79191;
+    padding: 100px 0px;
+    color: white;
+}
+.advice-left-right-container{
+    display: flex;
+    margin: 0px 200px;
+    gap: 50px;
+}
+.advoce-image img{
+    width: 100%;
+}
+.advice-left-right-container p{
+    margin: 20px 0px;
+    line-height: 1.2em;
+    text-align: justify;
+}
+.advice-right-box h3{
+    font-size: 25px;
+    border-bottom: 2px solid red;
+    padding-bottom: 20px;
+}
+.advice-left-box h4{
+    padding-top: 10px;
+    font-size: 25px;
+}
+.advice-left-right-container a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+.four-social-icon {
+    text-align: center;
+}
+.four-social-icon a{
+    margin: 0px 5px;
+    border: 1px solid black;
+}
+.advice-left-right-container a:hover{
+    background-color: wheat;
+}
 
 
 
@@ -250,6 +299,20 @@ button a{
         grid-gap: 15px;
         margin-top: 50px;
     }
+    /* Forth section responsive */
+    .advice-left-right-container{
+        display: block;
+        margin: 0px 30px;
+    }
+    .four-social-icon {
+        text-align:left;
+    }
+    .advice-left-right-container a{
+        margin: 10px 5px;
+    }
+    .advice-right-box h3{
+        margin-top: 50px;
+    }
 }
 
 @media only screen and (min-width: 689px) and (max-width: 1299px){
@@ -278,5 +341,13 @@ button a{
         grid-template-columns: repeat(1,1fr);
         grid-gap: 20px;
         margin-top: 80px;
+    }
+    /* Forth section responsive */
+    .advice-left-right-container{
+        display: flex;
+        margin: 0px 70px;
+    }
+    .advice-left-right-container a{
+        margin: 10px 5px;
     }
 }
